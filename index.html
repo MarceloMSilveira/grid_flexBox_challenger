@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS1 grid challenger</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 10px;
+            background-color: black;
+            width: 465px;
+            height: 494px;
+            grid-template-columns: 40px 150px 180px 65px;
+            grid-template-rows: 260px 200px 14px;
+        }
+        .box{
+            background-color: beige;
+        }
+        .a {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 10px 1fr;
+            gap: 10px;
+            background-color: black;
+        }
+        .a1 {
+            background-color: red;
+        }
+        .a2{
+            background-color: beige;
+        }
+        .c{
+            display: grid;
+            grid-template-rows: 40px 1fr 50px;
+            grid-template-columns: 100%;
+            gap: 10px;
+            background-color: black;
+        }
+        .c1{
+            background-color: black;
+        }
+        .c2, .c3 {
+            background-color: beige;
+        }
+        .d{
+            grid-row: span 2;
+        }
+        .e{
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            gap: 10px;
+        }
+        .e1{
+            height: 124px;
+            background-color: blue;
+        }
+        .e2{
+            background-color: beige;
+            height: 66px;
+        }
+        .g{
+            grid-row: span 2;
+            background-color: yellow;
+        }
+        .h {
+            grid-column: span 2;
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+        }
+        .h1{
+            width: 295px;
+            background-color: beige;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box a">
+            <div class="a1"></div>
+            <div class="a2"></div>
+        </div>
+        <div class="box"></div>
+        <div class="box c">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+        <div class="box d"></div>
+        <div class="box e">
+            <div class="e1"></div>
+            <div class="e2"></div>
+        </div>
+        <div class="box"></div>
+        <div class="box g"></div>
+        <div class="box h">
+            <div class="h1"></div>
+            <div class="h2"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
